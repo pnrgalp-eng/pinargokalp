@@ -1,5 +1,5 @@
 {
-  "name": "pinar-gokalp-vize",
+  "name": "pinar-gokalp-basvuru",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -40,5 +40,5 @@
     "wrangler": "4.92.0"
   },
   "type": "module",
-  "displayName": "P\u0131nar G\u00f6kalp Vize Dan\u0131\u015fmanl\u0131\u011f\u0131"
+  "displayName": "P\u0131nar G\u00f6kalp Uluslararas\u0131 Ba\u015fvuru Dan\u0131\u015fmanl\u0131\u011f\u0131"
 }

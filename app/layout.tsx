@@ -1,26 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
-export const metadata: Metadata = {
-  title: "Pınar Gökalp Vize Danışmanlığı",
-  description: "Schengen, İngiltere, ulusal vize ve ret sonrası başvurular için profesyonel, şeffaf ve kişiye özel vize danışmanlığı.",
-  other: {
-    "codex-preview": "development",
-  },
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-  },
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="tr">
-      <body className="antialiased">{children}</body>
-    </html>
-  );
-}
+const siteUrl="https://pinargokalp.com";
+export const metadata:Metadata={metadataBase:new URL(siteUrl),title:{default:"Aile Birleşimi Başvuru Danışmanlığı | Pınar Gökalp",template:"%s | Pınar Gökalp"},description:"Aile birleşimi gerekli evraklar, randevu planı, tercüme, apostil ve telefonla ön değerlendirme için Ankara merkezli kişiye özel danışmanlık.",keywords:["aile birleşimi","aile birleşimi gerekli evraklar","aile birleşimi randevusu","tercüme apostil","Ankara başvuru danışmanlığı"],alternates:{canonical:siteUrl},openGraph:{type:"website",locale:"tr_TR",url:siteUrl,siteName:"Pınar Gökalp Uluslararası Başvuru Danışmanlığı",title:"Aile Birleşimi Başvuru Danışmanlığı",description:"Evrak, randevu, tercüme ve apostil süreçlerinde kişiye özel yol haritası."},twitter:{card:"summary_large_image",title:"Pınar Gökalp Uluslararası Başvuru Danışmanlığı",description:"Aile birleşimi süreciniz için doğru, şeffaf ve kişisel hazırlık."},robots:{index:true,follow:true},other:{"codex-preview":"development"},icons:{icon:"/favicon.svg",shortcut:"/favicon.svg"}};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="tr"><body className="antialiased">{children}<script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"ProfessionalService",name:"Pınar Gökalp Uluslararası Başvuru Danışmanlığı",url:siteUrl,telephone:"+90 506 472 02 64",areaServed:"Türkiye",address:{"@type":"PostalAddress",streetAddress:"Barbaros Mahallesi, John F. Kennedy Caddesi No: 28/44, Başkent Apartmanı",addressLocality:"Çankaya",addressRegion:"Ankara",addressCountry:"TR"},serviceType:["Aile birleşimi başvuru danışmanlığı","Evrak hazırlığı","Randevu süreç danışmanlığı","Tercüme ve apostil organizasyon desteği"]})}}/></body></html>}
